@@ -220,44 +220,7 @@ Before 8
 Begone 5
 Being 3
 Besides 9
-Between 1
-Beware 1
-Bible 7
-Bibles 1
-Black 3
-Blackhorse 1
-Bonny 1
-Book 1
-Both 5
-Branderham 6
-Brethren 1
-Bring 1
-Brooad 1
-Bud 3
-But 159
-By 17
-C 5
-CHAPTER 34
-CONSEQUENTIAL 1
-CONTRACT 1
-Call 1
-Can 7
-Cannot 4
-Careful 1
-Catherine 379
-Catherines 1
-Cathy 124
-Cave 2
-Certainly 2
-Chapel 2
-Charlie 3
-Chase 1
-Cheer 1
-Chevy 1
-China 1
-Christendom 1
-Christian 5
-Christmas 5
+<OUTPUT TRUNCATED>
 Churstmassandbox@clientnode:~$
 ```
 # step 7
@@ -273,7 +236,6 @@ sandbox@clientnode:~/words2/words$ awk '{printf("%s" , $1 ? "\033[34m" : "\033[0
 ```
 # step 9
 ```bash
-cat result_sort.txt
 sandbox@clientnode:~/words2/words$ more result_sort.txt 
 and 4554
 the 4479
