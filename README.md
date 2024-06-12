@@ -3,6 +3,8 @@ M(app)er (and) R(educ)er
 
 [G4G](https://www.geeksforgeeks.org/hadoop-streaming-using-python-word-count-problem/) with comments removed, utf tag added, and converted to Python3. 
 
+I used the `bronte.txt` file at my data source to run the mapred stream improve script.
+
 Works over text files with a Python3 installed and execute permissions.
 
 To modify the maper/reducer python file, I needed to install vim on each nodes of the Hadoop cluster.
