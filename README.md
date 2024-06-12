@@ -8,7 +8,7 @@ I used the `bronte.txt` file at my data source to run the mapred stream improve 
 Works over text files with a Python3 installed and execute permissions.
 
 To modify the maper/reducer python file, I needed to install vim on each nodes of the Hadoop cluster.
-I create the following file and chmod to set the execute permissoin
+I create the following file and `chmod + x`to set the execute permissions
 
 # step 1
 ```bash
