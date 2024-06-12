@@ -35,6 +35,13 @@ total 16
 
 # step 3
 ```bash
+sandbox@clientnode:~/scripts$ hdfs dfs -rm -r /user/sandbox/words
+Deleted /user/sandbox/words
+```
+
+
+# step 3
+```bash
 hdfs dfs -rm -r /user/sandbox/words
 mapred streaming \
 -input /user/sandbox/books \
