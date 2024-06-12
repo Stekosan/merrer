@@ -259,3 +259,80 @@ Christian 5
 Christmas 5
 Churstmassandbox@clientnode:~$
 ```
+```bash
+mkdir words2
+hdfs dfs -copyToLocal /user/sandbox/words .
+sandbox@clientnode:~/words2/words$ ls
+_SUCCESS  part-00000
+```
+
+```bash
+sandbox@clientnode:~/words2/words$ awk '{printf("%s" , $1 ? "\033[34m" : "\033[0m")} {printf("%s\033[0m] : %s\n", $1, $2)}' part-00000 | sort -nrk 2 part-00000 > result_sort.txt
+```
+
+```bash
+cat result_sort.txt
+
+sandbox@clientnode:~/words2/words$ more result_sort.txt 
+and 4554
+the 4479
+I 4103
+to 3585
+of 2330
+a 2325
+he 1709
+you 1690
+her 1507
+in 1495
+his 1379
+that 1195
+it 1194
+she 1135
+was 1119
+me 1060
+my 1031
+not 936
+him 917
+as 907
+for 846
+s 839
+with 832
+on 797
+at 760
+be 730
+had 681
+is 627
+t 618
+have 618
+but 531
+from 495
+Heathcliff 475
+by 463
+would 440
+He 413
+Linton 404
+your 390
+if 382
+Catherine 379
+or 378
+said 375
+ll 368
+so 348
+were 345
+an 314
+out 313
+Mr 312
+no 303
+this 294
+up 291
+all 290
+are 286
+when 282
+could 276
+The 276
+we 273
+into 273
+one 271
+```
+
+
