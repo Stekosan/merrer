@@ -5,6 +5,22 @@ M(app)er (and) R(educ)er
 
 Works over text files with a Python3 installed and execute permissions.
 
+To modify the maper/reducer python file, I needed to install vim on each nodes of the Hadoop cluster.
+I create the following file and chmod to set the execute permissoin
+
+```bash
+sgberhault@instance-20240607-040704:~$ cat install-vi.sh 
+#sudo docker exec -it hadoop-sandbox-datanode-1 apt-get update
+sudo docker exec -it hadoop-sandbox-datanode-1 apt-get -y install vim
+#sudo docker exec -it hadoop-sandbox-namenode-1 apt-get update
+sudo docker exec -it hadoop-sandbox-namenode-1 apt-get -y install vim
+#sudo docker exec -it hadoop-sandbox-clientnode-1 apt-get update
+sudo docker exec -it hadoop-sandbox-clientnode-1 apt-get -y install vim
+#sudo docker exec -it hadoop-sandbox-nodemanager-1 apt-get update
+sudo docker exec -it hadoop-sandbox-nodemanager-1 apt-get -y install vim
+sgberhault@instance-20240607-040704:~$
+```
+
 ```bash
 hdfs dfs -rm -r /user/sandbox/words
 mapred streaming \
