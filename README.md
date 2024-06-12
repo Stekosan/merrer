@@ -5,12 +5,13 @@ M(app)er (and) R(educ)er
 
 Works over text files with a Python3 installed and execute permissions.
 
-```
+```bash
+hdfs dfs -rm -r /user/sandbox/words
 mapred streaming \
-  -input ??? \
-  -output ??? \
+  -input /user/sandbox/books \
+  -output /user/sandbox/words \
   -mapper mapper.py \
   -reducer reducer.py \
-  -file mapper.py \
-  -file reducer.py
+  -file scripts/mapper.py \
+  -file scripts/reducer.py
 ```
