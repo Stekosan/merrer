@@ -50,8 +50,8 @@ hdfs dfs -rm -r /user/sandbox/words
 mapred streaming \
 -input /user/sandbox/books \
 -output /user/sandbox/words \
--mapper mapper.py \
--reducer reducer.py \
+-mapper mapper_v2.py \
+-reducer reducer_v2.py \
 -files scripts/mapper_v2.py \
 -files scripts/reducer_v2.py
 ```
