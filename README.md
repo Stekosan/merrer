@@ -33,14 +33,18 @@ total 16
 -rwxrwxrwx 1 sandbox sandbox 1054 Jun 12 17:33 reducer_v2.py
 ```
 
-# step 3
+# step 3a
 ```bash
 sandbox@clientnode:~/scripts$ hdfs dfs -rm -r /user/sandbox/words
 Deleted /user/sandbox/words
 ```
+# step 3b
+```bash
+sandbox@clientnode:~/scripts$ hdfs dfs -ls /user/sandbox/words
+ls: `/user/sandbox/words': No such file or directory
+```
 
-
-# step 3
+# step 4
 ```bash
 hdfs dfs -rm -r /user/sandbox/words
 mapred streaming \
