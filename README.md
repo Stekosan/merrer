@@ -48,7 +48,6 @@ ls: `/user/sandbox/words': No such file or directory
 
 # step 4
 ```bash
-hdfs dfs -rm -r /user/sandbox/words
 mapred streaming \
 -input /user/sandbox/books \
 -output /user/sandbox/words \
@@ -145,7 +144,7 @@ packageJobJar: [scripts/mapper_v2.py, scripts/reducer_v2.py] [/hadoop/share/hado
 2024-06-12 18:11:41,659 INFO streaming.StreamJob: Output directory: /user/sandbox/words
 ```
 
-
+# step 6
 ```bash
 sandbox@clientnode:~$ !101
 hdfs dfs -ls /user/sandbox/words
@@ -261,20 +260,20 @@ Christian 5
 Christmas 5
 Churstmassandbox@clientnode:~$
 ```
+# step 7
 ```bash
 mkdir words2
 hdfs dfs -copyToLocal /user/sandbox/words .
 sandbox@clientnode:~/words2/words$ ls
 _SUCCESS  part-00000
 ```
-
+# step 8
 ```bash
 sandbox@clientnode:~/words2/words$ awk '{printf("%s" , $1 ? "\033[34m" : "\033[0m")} {printf("%s\033[0m] : %s\n", $1, $2)}' part-00000 | sort -nrk 2 part-00000 > result_sort.txt
 ```
-
+# step 9
 ```bash
 cat result_sort.txt
-
 sandbox@clientnode:~/words2/words$ more result_sort.txt 
 and 4554
 the 4479
