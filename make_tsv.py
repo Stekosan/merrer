@@ -21,10 +21,8 @@ PREFIX = 'https://github.com/Stekosan/merrer/tree/main/'
 BK_DIR = '../books/'
 
 def get_file_info(file_path):
-    """
-    Given a file path, this function returns the file size and its MD5 checksum in base64 encoding.
-    """
-    file_size = os.path.getsize(file_path)
+        # returns the file size and its MD5 checksum in base64 encoding.
+        file_size = os.path.getsize(file_path)
     
     # Calculate MD5 checksum
     md5_hash = hashlib.md5()
@@ -37,10 +35,9 @@ def get_file_info(file_path):
     return file_size, md5_checksum
 
 def create_tsv_file():
-    """
-    This function creates a TSV file containing the URL, file size, and MD5 checksum
+    # creates a TSV file containing the URL, file size, and MD5 checksum
     for each .txt file in the BK_DIR.
-    """
+    
     tsv_filename = 'books_info.tsv'
     
     with open(tsv_filename, 'w') as tsv_file:
