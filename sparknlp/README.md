@@ -40,7 +40,7 @@ This corpus offers a rich tapestry of Japanese culture and language, spanning di
 - **H1**: There is a statistically significant difference between the frequencies of subject and object pronouns for masculine and feminine personal pronouns in the corpus.
 - **H2 (Bonus)**: The distribution of genders among corpus authors meaningfully impacts the observed pronoun frequencies.
 
-## Vizualization
+## 📊 Vizualization
 1. Use the most and adequate plot to deliver a memorable data story-telling.
 2. Use any packages best fit for the purpose : seaborn, matplotlib, plotnine.
 
