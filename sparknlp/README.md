@@ -40,6 +40,10 @@ This corpus offers a rich tapestry of Japanese culture and language, spanning di
 - **H1**: There is a statistically significant difference between the frequencies of subject and object pronouns for masculine and feminine personal pronouns in the corpus.
 - **H2 (Bonus)**: The distribution of genders among corpus authors meaningfully impacts the observed pronoun frequencies.
 
+## Vizualization
+1. Use the most and adequate plot to deliver a memorable data story-telling.
+2. Use any packages best fit for the purpose : seaborn, matplotlib, plotnine.
+
 ## 🧪 Evaluation
 
 - **📉 Statistical Tests**: Conduct chi-square tests or similar statistical tests to assess whether the observed pronoun frequencies deviate significantly from what would be expected if there were no gender bias. Spark's built-in statistical functions or libraries like `statsmodels` in Python can be used.
