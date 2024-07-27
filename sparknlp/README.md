@@ -1,4 +1,4 @@
-# 📊 Report on Gender Bias in Pronoun Usage in classic Japanese Masterpiece Literature
+# 📊 Report on Gender Bias in Pronoun Usage in Classic Japanese Masterpiece Literature
 
 
 ## 🔍 Introduction
